@@ -1,6 +1,6 @@
 from groq import Groq
 
-client = Groq(api_key="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")
+client = Groq(api_key="("GROQ_API_KEY")")
 
 def prep_cook_agent(dish):
     prompt = f"You are a Prep Cook. For the dish '{dish}', give a shopping list with quantities and total prep time."
