@@ -4,7 +4,7 @@ from groq import Groq
 # Put your key here - no spaces
 GROQ_API_KEY ="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"
 
-client = Groq(api_key="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")
+client = Groq(api_key="("GROQ_API_KEY")")
 
 def head_chef_agent(dish):
     try:
