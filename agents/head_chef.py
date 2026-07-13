@@ -1,10 +1,9 @@
 import os
 from groq import Groq
+from dotenv import load_dotenv
+load_dotenv()
 
-# Put your key here - no spaces
-GROQ_API_KEY ="("GROQ_API_KEY")"
-
-client = Groq(api_key="("GROQ_API_KEY")")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def head_chef_agent(dish):
     try:
